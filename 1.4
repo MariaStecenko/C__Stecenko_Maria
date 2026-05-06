@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip> 
+#include <cmath>   
+using namespace std;
+
+int main() {
+    const double G = 6.67430e-11;
+    double m1, m2, r;
+    cout << "Введіть масу першого тіла (кг): ";
+    cin >> m1;
+    cout << "Введіть масу другого тіла (кг): ";
+    cin >> m2;
+    cout << "Введіть відстань між тілами (м): ";
+    cin >> r;
+    double F = G * (m1 * m2) / pow(r, 2);
+    cout << "\nСила притягання F = " << scientific << setprecision(4) << F << " Н" << endl;
+
+    return 0;
+}
